@@ -1,0 +1,896 @@
+<!DOCTYPE HTML>
+<!--
+	Uses base theme from Spectral by HTML5 UP
+	Find it here : html5up.net | @ajlkn
+	This can be recreated for free for personal and commercial use under the CCA 3.0 license
+	(ankitawedsanil.com/license)
+-->
+<html>
+
+<head>
+	<title>Atharva & Srishti</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+	<link href="../images/favicon.png" rel="icon">
+	<link href="../images/favicon_apple.png" rel="apple-touch-icon">
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../index.html">Atharva & Srishti</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="live_stream.html">Live Stream</a></li>
+								<li><a href="the_couple.html">The Couple</a></li>
+								<li><a href="schedule.html">Schedule</a></li>
+								<li><a href="encomium.html">Encomium</a></li>
+								<li><a
+										href="https://603de94bdc7d27-95255343.gallery.photo/gallery/anil---ankita/">Photos</a>
+								</li>
+								<li><a href="travel_and_accommodation.html">Travel & Accommodation</a></li>
+								<li><a href="parking_and_transportation.html">Parking & Transportation</a></li>
+								<li><a href="confirm_attendance.html">Confirm Attendance</a></li>
+								<li><a href="faqs.html">FAQs</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<article id="main">
+			<header>
+				<h2>The Couple</h2>
+				<h3>Take the Quiz !</h3>
+				<p>
+					We could tell you our story ... or we could see how well you know it. Find some inside secrets and
+					facts you probably have never heard about Atharva and Srishti. The story of how we met, the
+					engagement
+					and why we decided to get married !
+				</p>
+			</header>
+			<section class="wrapper style5">
+				<div class="inner">
+					<style>
+						.question-container {
+							max-width: 1024px;
+							background: #d5d5d5;
+							margin: 0 auto;
+							border-radius: 8px;
+							width: 100%;
+							font-size: 20px
+						}
+
+						.question-container .inner-container {
+							padding: 30px
+						}
+
+						.question-container .question_number {
+							color: #000;
+							text-align: center
+						}
+
+						.question-container .question_name {
+							margin-top: 30px
+						}
+
+						.question-container .options {
+							margin-top: 30px
+						}
+
+						.question-container .option {
+							margin-bottom: 3px;
+							background: #FFF;
+							padding: 10px;
+							border-radius: 3px
+						}
+
+						.question-container .enabled .option {
+							cursor: pointer
+						}
+
+						.question-container .enabled .option:hover {
+							background: #25a186;
+							color: #FFF
+						}
+
+						.question-container .disabled .correct .right {
+							color: green;
+							animation: correctAnim 0.5s 0s 2 both;
+							animation-direction: alternate;
+							transform: scale(2)
+						}
+
+						.question-container .option span {
+							display: none;
+							float: right
+						}
+
+						.question-container .disabled .correct .right,
+						.question-container .disabled .incorrect .wrong {
+							display: inline-block
+						}
+
+						@keyframes correctAnim {
+							0% {
+								color: green;
+								transform: scale(2)
+							}
+
+							100% {
+								color: green;
+								transform: scale(5)
+							}
+						}
+
+						.question-container .disabled .incorrect .wrong {
+							color: red;
+							transform: scale(1.5)
+						}
+
+						.question-container input[type='button'] {
+							background: #25a186;
+							color: #FFF;
+							cursor: pointer;
+							padding: 10px 40px;
+							margin: 20px;
+							border: 0;
+							font-size: 20px;
+							-webkit-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+							-moz-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+							box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+							transform: scale(1.1)
+						}
+
+						.question-container input[type='button']:hover {
+							-webkit-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							-moz-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							transform: scale(1)
+						}
+
+						.question-container .next input[type='button'] {
+							margin-top: 30px
+						}
+
+						.question-container .enabled .next input[type='button'] {
+							background: gray;
+							color: #d5d5d5;
+							-webkit-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							-moz-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							transform: scale(1);
+							cursor: default
+						}
+
+						.question-container .disabled .next input[type='button'] {
+							background: #25a186;
+							color: #FFF;
+							cursor: pointer;
+							-webkit-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+							-moz-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+							box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+							animation: enableBtnAnim 0.5s 0s infinite both;
+							animation-direction: alternate
+						}
+
+						@keyframes enableBtnAnim {
+							0% {
+								-webkit-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+								-moz-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+								box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+								transform: scale(1)
+							}
+
+							100% {
+								-webkit-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+								-moz-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+								box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+								transform: scale(1.1)
+							}
+						}
+
+						.question-container .disabled .next input[type='button']:hover {
+							-webkit-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							-moz-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+							animation: hoverBtnAnim 0.5s 0s 1 both;
+							animation-direction: alternate
+						}
+
+						@keyframes hoverBtnAnim {
+							0% {
+								-webkit-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+								-moz-box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+								box-shadow: 16px 17px 18px -7px rgba(18, 1, 18, 0.61);
+								transform: scale(1.1)
+							}
+
+							100% {
+								-webkit-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+								-moz-box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+								box-shadow: 0 0 0 -7px rgba(18, 1, 18, 0.61);
+								transform: scale(1)
+							}
+						}
+
+						.question-container .showAll {
+							margin-bottom: 40px;
+							border: 1px solid gray;
+							padding: 25px;
+							border-radius: 4px;
+							display: block !important
+						}
+
+						@media only screen and (max-width : 600px) {
+							.question-container .next input[type='button'] {
+								width: 100%;
+								margin: 0;
+								margin-top: 20px
+							}
+						}
+					</style>
+
+					<div id='quiz_container'></div>
+					<script>
+
+						var _0x30e8 = ['INPUT', 'setAttribute', 'inner-container', 'createElement',
+							'\x20correct', '90%', 'style', 'question\x20disabled\x20showAll',
+							'option\x20option', 'call', 'center', 'getElementById', 'question\x20disabled',
+							'questionContainer', 'nextBtn', '\x20of\x20', 'srcElement', '</div><br/><div>',
+							'className', 'question\x20enabled', '<div><div><b>Result:</b></div><br/><div>',
+							'This\x20Quiz\x20was\x20created\x20using\x20the\x20resources\x20<a\x20target=\x27_blank\x27\x20href=\x27https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\x27>and\x20help\x20 from here</a>',
+							'object', 'remove', 'parentElement', 'Show\x20Answers', 'indexOf', 'div',
+							'showAnswersBtn', 'hasOwnProperty', 'lastChild', 'right',
+							'getElementsByClassName', 'question_name', 'score', 'enabled', 'Quiz',
+							'<span\x20class=\x27right\x27>&#10004;</span><span\x20class=\x27wrong\x27>X</span>',
+							'showResetBtn', 'next',
+							'quiz-report', 'options', 'myLink', 'currentQuestion', 'value', 'question',
+							'bind', 'Try\x20Again', 'button', 'event', 'option', 'appendChild', 'target',
+							'elementId', 'none', 'textAlign', 'addEventListener', 'quizQuestions',
+							'innerHTML', 'block', 'innerContainer', 'question_number', 'length', 'display',
+							'type', 'click'];
+
+						(function (_0x286d19, _0x30e82a) {
+							var _0x9e26e6 = function (_0x15fa70) {
+								while (--_0x15fa70) {
+									_0x286d19['push'](_0x286d19['shift']());
+								}
+							};
+
+							_0x9e26e6(++_0x30e82a);
+						}
+
+							(_0x30e8, 0x10d));
+
+						var _0x9e26 = function (_0x286d19, _0x30e82a) {
+							_0x286d19 = _0x286d19 - 0x0;
+							var _0x9e26e6 = _0x30e8[_0x286d19];
+							return _0x9e26e6;
+						};
+
+						(function () {
+							function _0x199599() {
+								var _0x3b4b83 = document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);
+								this['questionContainer'] = document['createElement'](_0x9e26('0x16')),
+									this['questionContainer'][_0x9e26('0xd')] = 'question-container',
+									this[_0x9e26('0x37')] = document[_0x9e26('0x40')](_0x9e26('0x16')),
+									this[_0x9e26('0x37')][_0x9e26('0xd')] = _0x9e26('0x3f'), _0x3b4b83['appendChild'](this[_0x9e26('0x8')]),
+									this[_0x9e26('0x8')][_0x9e26('0x2e')](this[_0x9e26('0x37')]);
+
+								for (var _0x535939 = 0x0; _0x535939 < this[_0x9e26('0x24')][_0x9e26('0x34')]['length']; _0x535939++) {
+									var _0x3dd27d = document['createElement']('div'); _0x3dd27d[_0x9e26('0xd')] = _0x9e26('0xe'),
+										this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x3dd27d), _0x535939 != this[_0x9e26('0x26')] && (_0x3dd27d['style'][_0x9e26('0x3a')] = _0x9e26('0x31'));
+									var _0x81142 = document[_0x9e26('0x40')](_0x9e26('0x16')); _0x81142[_0x9e26('0xd')] = _0x9e26('0x38'), _0x81142[_0x9e26('0x35')] = _0x535939 + 0x1 + '/' + this['options'][_0x9e26('0x34')][_0x9e26('0x39')], _0x3dd27d[_0x9e26('0x2e')](_0x81142);
+									var _0x13c728 = document[_0x9e26('0x40')](_0x9e26('0x16'));
+									_0x13c728['className'] = _0x9e26('0x1c'), _0x13c728['innerHTML'] = this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x28')], _0x3dd27d[_0x9e26('0x2e')](_0x13c728);
+									var _0x4722a4 = document[_0x9e26('0x40')](_0x9e26('0x16')); _0x4722a4[_0x9e26('0xd')] = _0x9e26('0x24'), _0x3dd27d[_0x9e26('0x2e')](_0x4722a4);
+
+									for (var _0x28c409 = 0x0; _0x28c409 < this['options']['quizQuestions'][_0x535939]['options'][_0x9e26('0x39')]; _0x28c409++) {
+										var _0x4cca80 = document[_0x9e26('0x40')](_0x9e26('0x16')); _0x4cca80[_0x9e26('0xd')] = 'option\x20option' + _0x535939 + _0x28c409, _0x4cca80[_0x9e26('0x35')] = this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x24')][_0x28c409][_0x9e26('0x27')] + _0x9e26('0x20'), _0x4722a4[_0x9e26('0x2e')](_0x4cca80), _0x4cca80[_0x9e26('0x33')]('click', _0x14c511['bind'](this, _0x535939, _0x28c409));
+									}
+
+									var _0x4ca056 = document[_0x9e26('0x40')](_0x9e26('0x16')); _0x4ca056[_0x9e26('0xd')] = _0x9e26('0x22');
+									var _0x4cc6a7 = document[_0x9e26('0x40')]('INPUT');
+									_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x3b'), _0x9e26('0x2b')), _0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x27'), 'Next'), _0x4cc6a7[_0x9e26('0xd')] = _0x9e26('0x9'), _0x4ca056[_0x9e26('0x2e')](_0x4cc6a7), _0x3dd27d[_0x9e26('0x2e')](_0x4ca056), _0x4cc6a7[_0x9e26('0x33')](_0x9e26('0x3c'), _0x55841d[_0x9e26('0x29')](this));
+								}
+								var _0x4b290c = document[_0x9e26('0x40')](_0x9e26('0x16')); _0x4b290c['id'] = _0x9e26('0x23'), _0x4b290c['style'][_0x9e26('0x32')] = _0x9e26('0x5'),
+									this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x4b290c), function () {
+										var _0x4244cc = document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]); this[_0x9e26('0x25')] = document[_0x9e26('0x40')](_0x9e26('0x16')),
+											this[_0x9e26('0x25')]['style']['fontSize'] = _0x9e26('0x0'),
+											this[_0x9e26('0x25')][_0x9e26('0x1')][_0x9e26('0x32')] = _0x9e26('0x5'),
+											this[_0x9e26('0x25')][_0x9e26('0x35')] = _0x9e26('0x10'), _0x4244cc[_0x9e26('0x2e')](this[_0x9e26('0x25')]);
+									}
+									[_0x9e26('0x4')](this), function () {
+										var _0x22373e = document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]); _0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')] <= 0xbe && 0xb4 <= _0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')] || _0x22373e[_0x9e26('0x12')]();
+									}
+									[_0x9e26('0x4')](this);
+							}
+
+							function _0x14c511(_0x364928, _0x1925ff) {
+								var _0x1c0550 = _0x1c0550 || window[_0x9e26('0x2c')]; if (-0x1 != (_0x1c0550[_0x9e26('0x2f')] || _0x1c0550['srcElement'])[_0x9e26('0x13')][_0x9e26('0x13')][_0x9e26('0xd')][_0x9e26('0x15')](_0x9e26('0x1e'))) {
+									for (var _0x13e903 = document['getElementsByClassName'](_0x9e26('0x28')), _0x17a407 = 0x0;
+										_0x17a407 < _0x13e903[_0x9e26('0x39')]; _0x17a407++)_0x17a407 == _0x364928 && (_0x13e903[_0x364928][_0x9e26('0xd')] = _0x9e26('0x7'));
+									for (_0x17a407 = 0x0; _0x17a407 < this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x9e26('0x39')];
+										_0x17a407++) {
+										if (_0x17a407 == _0x1925ff) if (this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x1925ff][_0x9e26('0x1a')]) (_0x13e903 = document['getElementsByClassName']('option' + _0x364928 + _0x1925ff))[0x0][_0x9e26('0xd')] = _0x9e26('0x3') + _0x364928 + _0x1925ff + _0x9e26('0x41'),
+											this[_0x9e26('0x1d')]++;
+
+										else (_0x13e903 = document[_0x9e26('0x1b')](_0x9e26('0x2d') + _0x364928 + _0x1925ff))[0x0][_0x9e26('0xd')] = _0x9e26('0x3') + _0x364928 + _0x1925ff + '\x20incorrect';
+
+										else if (this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928][_0x9e26('0x24')][_0x17a407][_0x9e26('0x1a')]) (_0x13e903 = document[_0x9e26('0x1b')](_0x9e26('0x2d') + _0x364928 + _0x17a407))[0x0][_0x9e26('0xd')] = _0x9e26('0x3') + _0x364928 + _0x17a407 + _0x9e26('0x41');
+									}
+								}
+							}
+
+							function _0x55841d() {
+								var _0x44e42a = _0x44e42a || window[_0x9e26('0x2c')];
+								if (-0x1 != (_0x44e42a[_0x9e26('0x2f')] || _0x44e42a[_0x9e26('0xb')])['parentElement'][_0x9e26('0x13')]['className']['indexOf']('disabled')) {
+									this[_0x9e26('0x26')]++;
+									for (var _0x4023e4 = document['getElementsByClassName'](_0x9e26('0x28')), _0x3c6c2a = 0x0; _0x3c6c2a < _0x4023e4[_0x9e26('0x39')]; _0x3c6c2a++)_0x3c6c2a == this['currentQuestion'] ? _0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x36') : _0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')] = 'none'; this[_0x9e26('0x24')][_0x9e26('0x34')][_0x9e26('0x39')] == this[_0x9e26('0x26')] && function () {
+										var _0x522412 = document[_0x9e26('0x6')](_0x9e26('0x23'));
+
+										if (_0x522412[_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x36'), _0x522412[_0x9e26('0x35')] = _0x9e26('0xf') + this[_0x9e26('0x1d')] + _0x9e26('0xa') + this['options'][_0x9e26('0x34')][_0x9e26('0x39')] + _0x9e26('0xc') + parseInt(this[_0x9e26('0x1d')] / this['options'][_0x9e26('0x34')][_0x9e26('0x39')] * 0x64) + '%</div></div>',
+											this[_0x9e26('0x24')][_0x9e26('0x17')]) {
+											var _0x2ea20c = document[_0x9e26('0x40')]('INPUT');
+											_0x2ea20c[_0x9e26('0x3e')](_0x9e26('0x3b'), _0x9e26('0x2b')), _0x2ea20c[_0x9e26('0x3e')]('value', _0x9e26('0x14')), _0x522412[_0x9e26('0x2e')](_0x2ea20c), _0x2ea20c[_0x9e26('0x33')](_0x9e26('0x3c'),
+												function () {
+													for (var _0x3afb67 = document[_0x9e26('0x1b')]('question'), _0xbc6abe = 0x0; _0xbc6abe < _0x3afb67[_0x9e26('0x39')];
+														_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0xd')] = _0x9e26('0x2'); for (_0x3afb67 = document[_0x9e26('0x1b')](_0x9e26('0x22')), _0xbc6abe = 0x0;
+														_0xbc6abe < _0x3afb67[_0x9e26('0x39')]; _0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x31');
+												}['bind'](this));
+										}
+										if (this[_0x9e26('0x24')][_0x9e26('0x21')]) {
+											var _0x2fbad3 = document[_0x9e26('0x40')](_0x9e26('0x3d'));
+											_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x3b'), _0x9e26('0x2b')), _0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x27'), _0x9e26('0x2a')), _0x522412['appendChild'](_0x2fbad3), _0x2fbad3[_0x9e26('0x33')]('click',
+												function () {
+													for (var _0x3d8c0a = document[_0x9e26('0x1b')](_0x9e26('0x28')), _0x345f4a = 0x0; _0x345f4a < _0x3d8c0a['length']; _0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0xd')] = _0x9e26('0xe'), _0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')] = 'none', 0x0 == _0x345f4a && (_0x3d8c0a[_0x345f4a][_0x9e26('0x1')]['display'] = _0x9e26('0x36'));
+													for (_0x3d8c0a = document[_0x9e26('0x1b')](_0x9e26('0x22')), _0x345f4a = 0x0;
+														_0x345f4a < _0x3d8c0a[_0x9e26('0x39')]; _0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x36'); this[_0x9e26('0x26')] = 0x0,
+															this[_0x9e26('0x1d')] = 0x0, document[_0x9e26('0x6')](_0x9e26('0x23'))[_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x31'), document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')])[_0x9e26('0x35')] = '', _0x199599[_0x9e26('0x4')](this);
+												}
+												[_0x9e26('0x29')](this));
+										}
+									}
+
+									[_0x9e26('0x4')](this);
+								}
+							}
+
+							this[_0x9e26('0x1f')] = function () {
+								this['score'] = 0x0; arguments[this['currentQuestion'] = 0x0] && _0x9e26('0x11') == typeof arguments[0x0] && (this[_0x9e26('0x24')] = function (_0x427faf, _0x1c6308) {
+									var _0x3daaf6; for (_0x3daaf6 in _0x1c6308) _0x1c6308[_0x9e26('0x18')](_0x3daaf6) && (_0x427faf[_0x3daaf6] = _0x1c6308[_0x3daaf6]);
+									return _0x427faf;
+								}
+
+									({ 'quizQuestions': {}, 'elementId': '', 'showAnswersBtn': !0x0, 'showTimer': !0x0 }, arguments[0x0])), _0x199599[_0x9e26('0x4')](this);
+							};
+						}
+							()
+						);
+						var data = [
+							{
+								"type": "radio",
+								"question": "What do Atharva and Srishti enjoy doing the most together?",
+								"explanation": "",
+								"options": [
+									{ "value": "Watching TV Series", "right": false, "selected": false },
+									{ "value": "Talking for hours on call", "right": true, "selected": false },
+									{ "value": "Shopping at malls", "right": false, "selected": false },
+									{ "value": "Going on bike rides", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "Which sport is Atharva most passionate about?",
+								"explanation": "",
+								"options": [
+									{ "value": "Cricket", "right": false, "selected": false },
+									{ "value": "Football", "right": true, "selected": false },
+									{ "value": "Basketball", "right": false, "selected": false },
+									{ "value": "Tennis", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "Which game can Atharva play for hours without getting bored?",
+								"explanation": "",
+								"options": [
+									{ "value": "Free Fire", "right": false, "selected": false },
+									{ "value": "BGMI / PUBG", "right": true, "selected": false },
+									{ "value": "Valorant", "right": false, "selected": false },
+									{ "value": "FIFA", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "What kind of movies does Srishti enjoy the most?",
+								"explanation": "",
+								"options": [
+									{ "value": "Romantic", "right": false, "selected": false },
+									{ "value": "Comedy", "right": false, "selected": false },
+									{ "value": "Horror", "right": true, "selected": false },
+									{ "value": "Action", "right": false, "selected": false }
+								],
+								"selected": "2"
+							},
+							{
+								"type": "radio",
+								"question": "How would you describe Srishti in one word?",
+								"explanation": "",
+								"options": [
+									{ "value": "Serious", "right": false, "selected": false },
+									{ "value": "Cute", "right": true, "selected": false },
+									{ "value": "Silent", "right": false, "selected": false },
+									{ "value": "Strict", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "Atharva and Srishti can spend hours doing what?",
+								"explanation": "",
+								"options": [
+									{ "value": "Watching Movies", "right": false, "selected": false },
+									{ "value": "Calling each other", "right": true, "selected": false },
+									{ "value": "Playing Games Together", "right": false, "selected": false },
+									{ "value": "Shopping", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "What type of marriage are Atharva and Srishti celebrating?",
+								"explanation": "",
+								"options": [
+									{ "value": "Arranged Marriage", "right": false, "selected": false },
+									{ "value": "Love Marriage", "right": true, "selected": false },
+									{ "value": "Destination Marriage", "right": false, "selected": false },
+									{ "value": "Court Marriage", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "On which date did Atharva and Srishti get engaged?",
+								"explanation": "",
+								"options": [
+									{ "value": "14 February", "right": false, "selected": false },
+									{ "value": "25 March", "right": true, "selected": false },
+									{ "value": "15 August", "right": false, "selected": false },
+									{ "value": "1 January", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "If Atharva gets free time, what is he most likely to do?",
+								"explanation": "",
+								"options": [
+									{ "value": "Read Books", "right": false, "selected": false },
+									{ "value": "Play Football", "right": true, "selected": false },
+									{ "value": "Go Shopping", "right": false, "selected": false },
+									{ "value": "Cook Food", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "Which movie would Srishti most likely choose for date night?",
+								"explanation": "",
+								"options": [
+									{ "value": "A Horror Movie", "right": true, "selected": false },
+									{ "value": "A Cartoon Movie", "right": false, "selected": false },
+									{ "value": "A Documentary", "right": false, "selected": false },
+									{ "value": "A Sports Movie", "right": false, "selected": false }
+								],
+								"selected": "0"
+							},
+							{
+								"type": "radio",
+								"question": "Who is more likely to get scared first while watching a horror movie?",
+								"explanation": "",
+								"options": [
+									{ "value": "Atharva", "right": true, "selected": false },
+									{ "value": "Srishti", "right": false, "selected": false },
+									{ "value": "Both Together", "right": false, "selected": false },
+									{ "value": "Neither", "right": false, "selected": false }
+								],
+								"selected": "0"
+							},
+							{
+								"type": "radio",
+								"question": "What makes Atharva and Srishti's relationship so special?",
+								"explanation": "",
+								"options": [
+									{ "value": "Their endless phone calls", "right": false, "selected": false },
+									{ "value": "Their friendship and understanding", "right": true, "selected": false },
+									{ "value": "Their gaming skills", "right": false, "selected": false },
+									{ "value": "Their movie choices", "right": false, "selected": false }
+								],
+								"selected": "1"
+							},
+							{
+								"type": "radio",
+								"question": "If they could spend an entire day together, what would they most likely do?",
+								"explanation": "",
+								"options": [
+									{ "value": "Talk, laugh and create memories", "right": true, "selected": false },
+									{ "value": "Play PUBG all day", "right": false, "selected": false },
+									{ "value": "Sleep all day", "right": false, "selected": false },
+									{ "value": "Go Shopping", "right": false, "selected": false }
+								],
+								"selected": "0"
+							},
+							{
+								"type": "radio",
+								"question": "What is the strongest foundation of Atharva and Srishti's relationship?",
+								"explanation": "",
+								"options": [
+									{ "value": "Trust and Love", "right": true, "selected": false },
+									{ "value": "Social Media", "right": false, "selected": false },
+									{ "value": "Gifts", "right": false, "selected": false },
+									{ "value": "Long Trips", "right": false, "selected": false }
+								],
+								"selected": "0"
+							},
+							{
+								"type": "radio",
+								"question": "What is everyone's wish for Atharva and Srishti?",
+								"explanation": "",
+								"options": [
+									{ "value": "A lifetime of happiness and togetherness", "right": true, "selected": false },
+									{ "value": "More PUBG victories", "right": false, "selected": false },
+									{ "value": "More Horror Movies", "right": false, "selected": false },
+									{ "value": "A World Tour", "right": false, "selected": false }
+								],
+								"selected": "0"
+							}
+						];
+
+						var quiz = new Quiz({
+							quizQuestions: data, elementId: 'quiz_container', showAnswersBtn: true, showResetBtn: true
+						});
+
+					</script>
+
+					<br />
+					<br />
+					<section class="groom-section">
+
+						<h2>The Bride & Groom</h2>
+						<hr>
+
+						<h3>Atharva</h3>
+
+						<div class="groom-image">
+							<img src="../images/atharva_final_1.jpg" alt="Atharva Childhood">
+						</div>
+
+						<p>
+							Born on <b>31<sup>st</sup> August 1998</b>, Atharva is the beloved son of
+							<b>Mrs. Jayashree Dani</b> and <b>Mr. Mukund Dani</b> from the beautiful town of
+							<b>Murtizapur</b>. From the very beginning, he was the cutest little boy with an
+							innocent smile that could brighten anyone's day. A true <em>mumma's boy</em>,
+							Atharva was always known for his caring nature, discipline and obedience.
+							Whether at home, school or among relatives, he was loved for his simplicity,
+							kindness and cheerful personality.
+						</p>
+
+						<p>
+							Alongside academics, sports became an inseparable part of his life.
+							Volleyball wasn't just a game—it became his passion, making him one of the
+							finest players in his school. His childhood was filled with laughter,
+							adventures and countless memories shared with his closest friends
+							<b>Sumit Upadhye</b>, <b>Ankit Jaiswal</b> and <b>Kshitij Kundley</b>,
+							friendships that continue to stand strong even today.
+						</p>
+
+						<div class="groom-image">
+							<img src="../images/atharva_final_2.jpg" alt="Atharva Journey">
+						</div>
+
+						<p>
+							After completing his schooling, Atharva moved to <b>Hyderabad</b> for his
+							higher secondary education before pursuing Engineering at
+							<b>Savitribai Phule Pune University</b>. Pune wasn't just where he earned a
+							degree—it became home to friendships that turned into family.
+							<b>Ganesh Kirdak</b>, <b>Pranil Kulkarni</b> and <b>Gogi</b> became his
+							lifelong companions, making every college memory unforgettable.
+						</p>
+
+						<p>
+							With determination and ambition, Atharva stepped into the corporate world,
+							where his dedication and perseverance helped him build a successful career.
+							Every milestone became another stepping stone, and his journey continues to
+							inspire everyone around him.
+						</p>
+
+						<blockquote>
+							<b>P.S.</b><br>
+							If there's a football match on TV or a PUBG game waiting to be played,
+							good luck getting his attention! Between football, gaming, and long
+							conversations with the people he loves, Atharva finds happiness in life's
+							simplest moments.
+						</blockquote>
+
+						<p>
+							Then destiny had something extraordinary in store. Through a mutual friend,
+							Atharva met <b>Srishti</b>. What began as a simple introduction blossomed into
+							endless conversations, beautiful memories and a love story built on trust,
+							friendship and understanding. Their engagement marked the beginning of a
+							lifetime promise, and today they stand hand in hand, ready to begin the most
+							beautiful chapter of their lives together.
+						</p>
+
+						<p style="text-align:center;font-size:1.2rem;">
+							<em>
+								"Every journey has a destination, and for Atharva, that destination has
+								always been a life filled with love, family, friendship... and now,
+								Srishti."
+							</em>
+						</p>
+
+					</section>
+
+					<br />
+					<hr />
+					<h3 style="text-align: center;">Srishti</h3>
+
+
+					<div class="groom-image">
+						<img src="../images/srishti_final_1.jpg" alt="Srishti Childhood">
+					</div>
+
+					<p>
+						Born on <b>15<sup>th</sup> September 2000</b>, Srishti is the beloved daughter of
+						<b>Mr. Vijaykumar Garg</b> and <b>Mrs. Rishika Garg</b>. From her very first smile,
+						she captured everyone's heart with her innocence, kindness, and cheerful nature.
+						A sweet, obedient, and lovable little girl, Srishti always dreamed big while
+						keeping her feet firmly grounded. Her warmth, compassion, and ever-present smile
+						have made her a source of happiness for everyone fortunate enough to know her.
+						<br /><br />
+
+						Growing up, Srishti had a unique fascination with <b>horror movies</b>. While most
+						people would hide behind a pillow during the scary scenes, she would be completely
+						engrossed, enjoying every thrilling moment. Her fearless spirit, combined with her
+						caring heart, perfectly reflects the wonderful person she is today.
+					</p>
+
+					<div class="groom-image">
+						<img src="../images/srishti_final_2.jpg" alt="Srishti Journey">
+					</div>
+
+					<p>
+						Srishti completed her schooling in the beautiful city of <b>Chandigarh</b>, where
+						she laid the foundation for her academic journey. Driven by her passion for
+						understanding people and helping them grow, she pursued both her
+						<b>Bachelor's</b> and <b>Master's degree in Psychology</b> from the prestigious
+						<b>Thapar University</b>. During these memorable college years, she found not only
+						knowledge but also a lifelong friendship in <b>Alizha</b>, whose bond has remained
+						one of the greatest gifts of her student life.
+						<br /><br />
+
+						Ever ambitious and determined, Srishti always dreamed of building her career in
+						<b>Pune</b>. With dedication and perseverance, she turned that dream into reality
+						by joining <b>Tata Consultancy Services (TCS)</b> as an
+						<b>Executive HR</b>. It was a proud milestone that reflected her hard work,
+						confidence, and commitment to achieving her goals.
+					</p>
+
+					<blockquote>
+						<b>P.S.</b><br>
+						Don't let her sweet smile fool you! She'll happily choose a horror movie over a
+						romantic one any day. Whether it's spooky movie nights, heartfelt conversations,
+						or making everyone around her smile, Srishti finds joy in life's little moments.
+					</blockquote>
+
+					<p>
+						Life had something even more beautiful planned for her. Through a mutual friend,
+						Srishti met <b>Atharva</b>. What started as simple conversations soon turned into
+						endless phone calls, unwavering support, shared dreams, and countless beautiful
+						memories. Their friendship blossomed into a love story built on trust, laughter,
+						understanding, and unconditional love.
+						<br /><br />
+
+						Their engagement marked the beginning of a wonderful new chapter, and today they
+						stand hand in hand, surrounded by the love and blessings of their families and
+						friends, ready to begin a lifetime of happiness together.
+					</p>
+
+					<p style="text-align:center;font-size:1.2rem;">
+						<em>
+							"A girl with beautiful dreams, a heart full of kindness, and a smile that
+							lights up every room... Srishti found not just the career she dreamed of, but
+							also the love that made every dream complete."
+						</em>
+					</p>
+
+					<br />
+					<hr />
+					<h2>Alright... Here's Our Story</h2>
+					<hr />
+
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_1.jpg" alt="" />
+								</span>
+							</div>
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_2.jpg" alt="" />
+								</span>
+							</div>
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_3.jpg" alt="" />
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<p>
+						Every beautiful story begins when you least expect it, and ours began in
+						<b>2024</b>. Through a mutual friend, two strangers crossed paths without knowing
+						that destiny had already written something extraordinary for them.
+						<br /><br />
+
+						What started as casual conversations quickly turned into endless phone calls,
+						laughter, and sharing every little detail of life. With every conversation,
+						Atharva and Srishti discovered not only a wonderful friend in each other but also
+						someone who truly understood them. From the very first meeting, there was an
+						unexplainable feeling—a spark that quietly whispered,
+						<b>"This is the one."</b>
+					</p>
+
+					<div class="box alt story-gallery">
+						<div class="row gtr-50 gtr-uniform">
+
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_4.jpg" alt="">
+								</span>
+							</div>
+
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_5.jpg" alt="">
+								</span>
+							</div>
+
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_6.jpg" alt="">
+								</span>
+							</div>
+
+						</div>
+					</div>
+
+					<p>
+						As days turned into months, their friendship blossomed into a beautiful love
+						story. Every late-night conversation, every shared dream, every smile, and every
+						moment together strengthened their bond. They stood beside one another through
+						every happiness and every challenge, realizing that life felt complete only when
+						they were together.
+						<br /><br />
+
+						Soon, they made the most beautiful promise—to walk through every season of life
+						hand in hand, forever.
+					</p>
+
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_7.jpg" alt="" />
+								</span>
+							</div>
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/engagement.jpg" alt="" />
+								</span>
+							</div>
+							<div class="col-4">
+								<span class="image fit">
+									<img src="../images/story_8.jpg" alt="" />
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<p>
+						When Atharva and Srishti shared their decision with their families, they were
+						welcomed with immense love, blessings, and happiness. With both families coming
+						together wholeheartedly, their beautiful love story found its perfect beginning.
+						Their engagement marked the start of a new chapter, and now the day they've always
+						dreamed of is finally here.
+						<br /><br />
+
+						Surrounded by the love of their family and friends, Atharva and Srishti are ready
+						to begin a lifetime of laughter, companionship, adventures, and unconditional
+						love. Their story, which began with friendship in 2024, is now becoming a forever
+						promise.
+					</p>
+
+					<blockquote>
+						"Sometimes two hearts are simply meant to find each other. What began with a
+						simple introduction through a mutual friend has become a lifetime of love,
+						friendship, and togetherness."
+					</blockquote>
+
+					<ul class="alt">
+						<li>❤️ And this is only the beginning of their forever...</li>
+						<li>💍 Join us in celebrating their wedding at <b>Salasar Resort, Murtizapur</b>.</li>
+						<li>✨ Let's witness the next beautiful chapter of Atharva &amp; Srishti's love story together.
+						</li>
+					</ul>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+
+							<!-- Instagram -->
+							<li>
+								<a href="https://www.instagram.com/atharva_dani_" class="icon brands fa-instagram">
+									<span class="label">Instagram</span>
+								</a>
+							</li>
+
+							<!-- Email -->
+							<li>
+								<a href="mailto:atharvadani318@gmail.com?subject=Atharva Srishti Wedding Inquiry"
+									class="icon solid fa-envelope">
+									<span class="label">Email</span>
+								</a>
+							</li>
+
+							<!-- Phone -->
+							<li>
+								<a href="tel:+919130197031" class="icon solid fa-phone">
+									<span class="label">Phone</span>
+								</a>
+							</li>
+
+						</ul>
+
+						<ul class="copyright">
+							<li>&copy; 2026 AtharvaSrishtiWedding</li>
+							<li>Organized by Dani–Garg Family</li>
+						</ul>
+					</footer>
+
+				</div>
+
+				<!-- Scripts -->
+				<script src="../assets/js/jquery.min.js"></script>
+				<script src="../assets/js/jquery.scrollex.min.js"></script>
+				<script src="../assets/js/jquery.scrolly.min.js"></script>
+				<script src="../assets/js/browser.min.js"></script>
+				<script src="../assets/js/breakpoints.min.js"></script>
+				<script src="../assets/js/util.js"></script>
+				<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

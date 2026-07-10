@@ -4212,3 +4212,13 @@ body.is-mobile.landing .wrapper.style4 {
 body.is-mobile.landing #footer {
 	background-color: #1d242a;
 }
+
+#banner p {
+	line-height: 1.8;
+	text-align: center;
+}
+
+#banner p br {
+	display: block;
+	margin-bottom: 10px;
+}

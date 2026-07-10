@@ -4230,6 +4230,7 @@ body.is-mobile.landing #footer {
 	margin: 0 auto;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -4239,8 +4240,18 @@ h6 {
 	text-align: center;
 }
 
-p,
-li {
+/* Only content paragraphs */
+.content p,
+.wrapper p,
+section p {
 	text-align: justify;
 	text-justify: inter-word;
+	line-height: 1.8;
+}
+
+/* Leave everything else centered */
+li,
+header,
+.major {
+	text-align: center;
 }

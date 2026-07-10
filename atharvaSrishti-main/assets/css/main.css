@@ -4222,3 +4222,10 @@ body.is-mobile.landing #footer {
 	display: block;
 	margin-bottom: 10px;
 }
+
+.groom-image img {
+	width: 220px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}

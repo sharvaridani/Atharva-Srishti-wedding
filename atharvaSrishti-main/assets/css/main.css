@@ -4274,3 +4274,111 @@ body.is-mobile.landing #footer {
 	object-fit: cover;
 	border-radius: 12px;
 }
+
+/* Mobile Responsive Fixes */
+@media screen and (max-width: 768px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.wrapper {
+		padding: 3em 1em;
+	}
+
+	.wrapper>.inner {
+		width: 100%;
+		padding: 0 1em;
+	}
+
+	.row {
+		margin-left: 0;
+	}
+
+	.row>* {
+		width: 100% !important;
+		padding-left: 0;
+	}
+
+	.spotlight {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.spotlight .image,
+	.spotlight .content {
+		width: 100%;
+	}
+
+	.spotlight .content {
+		padding: 2em 1.5em;
+		text-align: center;
+	}
+
+	.features li {
+		width: 100%;
+		padding: 2em 1em;
+		text-align: center;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	iframe {
+		width: 100%;
+		height: auto;
+	}
+
+	table {
+		display: block;
+		overflow-x: auto;
+	}
+
+	.button {
+		width: 100%;
+		max-width: none;
+	}
+
+	ul.actions {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	ul.actions li {
+		width: 100%;
+		padding: 0.5em 0;
+	}
+
+	ul.actions li .button {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}

@@ -4230,6 +4230,17 @@ body.is-mobile.landing #footer {
 	margin: 0 auto;
 }
 
-body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-align: center;
+}
+
+p,
+li {
+	text-align: justify;
+	text-justify: inter-word;
 }

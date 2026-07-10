@@ -4229,3 +4229,7 @@ body.is-mobile.landing #footer {
 	display: block;
 	margin: 0 auto;
 }
+
+body {
+	text-align: center;
+}
